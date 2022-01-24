@@ -25,7 +25,7 @@ Deberia aparecer el mensaje `it works` con el state `true`
 ==================
 
 * *POST* `http://localhost:3000/api/login`
-```json
+```
 {
     body:{
 		email:'elpepe@email.com',
@@ -37,7 +37,7 @@ Deberia aparecer el mensaje `it works` con el state `true`
 }
 ```
 * *POST* `http://localhost:3000/api/login/register`
-```json
+```
     {
 		name: 'elpepe'
         email:'elpepe@email.com',
@@ -48,14 +48,14 @@ Deberia aparecer el mensaje `it works` con el state `true`
     }
 ```
 * *GET* `http://localhost:3000/api/users`
-```json
+```
     headers:{
         'Content-Type': 'application/json',
         'auth-token':'token_obtenido_al_realizar_login'
     }
 ```
-* *PUT* `http://localhost:3000/api/users`
-```json
+*PUT* `http://localhost:3000/api/users`
+```
     {
 		name: 'NuevoNombre'
         email:'elpepe@email.com',
@@ -66,8 +66,8 @@ Deberia aparecer el mensaje `it works` con el state `true`
 		'auth-token':'token_obtenido_al_realizar_login'
     }
 ```
-* *DELETE* `http://localhost:3000/api/users`
-```json
+*DELETE* `http://localhost:3000/api/users`
+```
     {
         email:'elpepe@email.com',
 		password:'123'
