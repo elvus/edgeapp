@@ -28,8 +28,8 @@ Deberia aparecer el mensaje `it works` con el state `true`
 ```
 {
     body:{
-		email:'elpepe@email.com',
-		password:'123'
+	email:'elpepe@email.com',
+	password:'123'
     }
     headers:{
         'Content-Type': 'application/json',
@@ -39,9 +39,9 @@ Deberia aparecer el mensaje `it works` con el state `true`
 * *POST* `http://localhost:3000/api/login/register`
 ```
     {
-		name: 'elpepe'
+	name: 'elpepe'
         email:'elpepe@email.com',
-		password:'123'
+	password:'123'
     }
     headers:{
         'Content-Type': 'application/json'
@@ -57,23 +57,23 @@ Deberia aparecer el mensaje `it works` con el state `true`
 *PUT* `http://localhost:3000/api/users`
 ```
     {
-		name: 'NuevoNombre'
+    	name: 'NuevoNombre'
         email:'elpepe@email.com',
-		password:'123'
+	password:'123'
     }
     headers:{
         'Content-Type': 'application/json',
-		'auth-token':'token_obtenido_al_realizar_login'
+	'auth-token':'token_obtenido_al_realizar_login'
     }
 ```
 *DELETE* `http://localhost:3000/api/users`
 ```
     {
         email:'elpepe@email.com',
-		password:'123'
+	password:'123'
     }
     headers:{
         'Content-Type': 'application/json',
-		'auth-token':'token_obtenido_al_realizar_login'
+	'auth-token':'token_obtenido_al_realizar_login'
     }
 ```
