@@ -23,8 +23,9 @@ Deberia aparecer el mensaje `it works` con el state `true`
 
 ### REST API Endpoints
 ==================
-```
-*POST* `http://localhost:3000/api/login`
+
+* *POST* `http://localhost:3000/api/login`
+```json
 {
     body:{
 		email:'elpepe@email.com',
@@ -34,7 +35,9 @@ Deberia aparecer el mensaje `it works` con el state `true`
         'Content-Type': 'application/json',
   }
 }
-*POST* `http://localhost:3000/api/login/register`
+```
+* *POST* `http://localhost:3000/api/login/register`
+```json
     {
 		name: 'elpepe'
         email:'elpepe@email.com',
@@ -43,12 +46,16 @@ Deberia aparecer el mensaje `it works` con el state `true`
     headers:{
         'Content-Type': 'application/json'
     }
-*GET* `http://localhost:3000/api/users`
+```
+* *GET* `http://localhost:3000/api/users`
+```json
     headers:{
         'Content-Type': 'application/json',
         'auth-token':'token_obtenido_al_realizar_login'
     }
-*PUT* `http://localhost:3000/api/users`
+```
+* *PUT* `http://localhost:3000/api/users`
+```json
     {
 		name: 'NuevoNombre'
         email:'elpepe@email.com',
@@ -58,7 +65,9 @@ Deberia aparecer el mensaje `it works` con el state `true`
         'Content-Type': 'application/json',
 		'auth-token':'token_obtenido_al_realizar_login'
     }
-*DELETE* `http://localhost:3000/api/users`
+```
+* *DELETE* `http://localhost:3000/api/users`
+```json
     {
         email:'elpepe@email.com',
 		password:'123'
