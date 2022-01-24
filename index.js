@@ -25,12 +25,10 @@ mongoose.connect(uri).then(()=>{
 //routes
 const authRoutes = require('./routes/auth');
 const usersRoutes = require('./routes/users');
-const welcomeRoutes = require('./routes/welcome');
 const verifyToken = require('./middleware/verify_token');
 //middlewares
 app.use('/api/login', authRoutes);
 app.use('/api/users', verifyToken, usersRoutes);
-app.use('/api/welcome', verifyToken, welcomeRoutes);
 
 app.get("/", (req, res)=>{
     res.json({

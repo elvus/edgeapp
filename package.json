@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "nodemon index",
     "start": "node index",
+    "dummy": "node dummy_data",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

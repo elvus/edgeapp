@@ -20,7 +20,10 @@ npm run dev
 En el navegador verifica que la api este corriendo en la sgte url   
 `http://localhost:3000`   
 Deberia aparecer el mensaje `it works` con el state `true`
-
+### 5) Insert dummy data
+```
+npm run dummy
+```
 ### REST API Endpoints
 ==================
 
